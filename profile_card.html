@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Profile Card</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .card {
+            width: 400px;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: row;
+            overflow: hidden;
+            padding: 20px;
+            gap: 20px;
+        }
+
+
+        .card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #6a0dad;
+        }
+
+        .info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .info h2 {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .info p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            text-align: center;
+            background: #6a0dad;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 8px;
+            transition: 0.3s;
+            flex: 1;
+        }
+
+        .buttons a:hover {
+            background: #580b9a;
+        }
+
+        @media (max-width: 640px) {
+            .card {
+                flex-direction: column;
+                width: 70vw;
+                padding: 15px;
+            }
+
+            .card img {
+                width: 120px;
+                height: 120px;
+                margin: 0 auto;
+            }
+
+            .info {
+                text-align: center;
+            }
+
+            .buttons {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .buttons a {
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <img src="#">
+        <div class="info">
+            <h2>Krishna Shukla</h2>
+            <p>Web Developer passionate about building responsive and user-friendly websites.</p>
+            <div class="buttons">
+                <a href="#contact" alt="Contact">Contact</a>
+                <a href="#portfolio" alt="View Portfolio">Portfolio</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
